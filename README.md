@@ -2,7 +2,7 @@
 Elemente de web design (HTMAL, CSS, JavaScript, PHP)  (phpMyAdmin-baza e date)
 
 
-## Descriere
+### *Descriere*
 <br>
 Numele site -lui este Saveur Café. Este un site al unei cafenele care are
 locație fizică. Orice client poate să-și facă cont și să se logheze pentru a-și

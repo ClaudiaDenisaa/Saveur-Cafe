@@ -6,7 +6,7 @@ Elemente de web design (HTMAL, CSS, JavaScript, PHP)  (phpMyAdmin-baza e date)
 
 
 
-## <br>
+## 
 ## *Descriere*
 <br>
 Numele site -lui este Saveur Café. Este un site al unei cafenele care are
@@ -20,7 +20,7 @@ mai aștepte.
 
 
 
-
+##
 ## *Manual site*
 <br>
 Pentru a putea accesa site-ul,mai intâi trebuie să instalezi XAMPP pe PC.
@@ -37,7 +37,7 @@ accesa PROIECT EWD, iar apoi apăsăți fișierul logare.html.
 
 
 
-
+##
 ## *Baza de date*
 <br>
 Am folosit o baza de date numită ewd_savoir_cafe(http://localhost/phpmyadmin/index.php?route=/server/databases) cu patru tabele fiecare având mai multe coloane:
@@ -101,7 +101,7 @@ Am folosit o baza de date numită ewd_savoir_cafe(http://localhost/phpmyadmin/in
 
 
 
-
+##
 ## *Funcționalitate*
 
 

@@ -6,7 +6,7 @@ Elemente de web design (HTMAL, CSS, JavaScript, PHP)  (phpMyAdmin-baza e date)
 
 
 
-##
+## <br>
 ## *Descriere*
 <br>
 Numele site -lui este Saveur Café. Este un site al unei cafenele care are

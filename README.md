@@ -2,7 +2,7 @@
 Elemente de web design (HTMAL, CSS, JavaScript, PHP)  (phpMyAdmin-baza e date)
 
 
-### *Descriere*
+## *Descriere*
 <br>
 Numele site -lui este Saveur Café. Este un site al unei cafenele care are
 locație fizică. Orice client poate să-și facă cont și să se logheze pentru a-și
@@ -11,7 +11,7 @@ urmează să preia comanda din locatia fizică la ora pe care a selectat-o făr�
 mai aștepte.
 
 
-Manual site
+## *Manual site*
 <br>
 Pentru a putea accesa site-ul,mai intâi trebuie să instalezi XAMPP pe PC.
 După ce ați instalat aplicația este nevoie să apăsăți pe Manage Servers și să
@@ -23,12 +23,12 @@ nevoie să deschideți o fereastră localhost ,acolo aveți posibilitatea de a
 accesa PROIECT EWD, iar apoi apăsăți fișierul logare.html.
 
 
-Baza de date
+## *Baza de date*
 <br>
 Am folosit o baza de date numită ewd_savoir_cafe(http://localhost/phpmyadmin/index.php?route=/server/databases) cu patru tabele fiecare având mai multe coloane:
 
 
-1.Utilizator:
+### 1.Utilizator:
 <br>
 • id_utilizator (cheie primara)
 <br>
@@ -43,7 +43,7 @@ Am folosit o baza de date numită ewd_savoir_cafe(http://localhost/phpmyadmin/in
 • comenzi
 
 
-2.Comanda:
+### 2.Comanda:
 <br>
 • id_comenzi (cheie primara)
 <br>
@@ -60,7 +60,7 @@ Am folosit o baza de date numită ewd_savoir_cafe(http://localhost/phpmyadmin/in
 • ora_ridicare_comanda
 
 
-3.Detali:
+### 3.Detali:
 <br>
 • id_detali (cheie primara)
 <br>
@@ -71,7 +71,7 @@ Am folosit o baza de date numită ewd_savoir_cafe(http://localhost/phpmyadmin/in
 • cantitate
 
 
-4.produs:
+### 4.produs:
 <br>
 • id_produs (cheie primara)
 <br>
@@ -80,7 +80,7 @@ Am folosit o baza de date numită ewd_savoir_cafe(http://localhost/phpmyadmin/in
 • pret
 
 
-Funcționalitate
+## *Funcționalitate*
 
 
 Un client se poate conecta cu nume și parolă,dacă nu are cont trebuie să-

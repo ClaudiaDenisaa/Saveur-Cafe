@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Saveur Café</title>
+        <link rel="stylesheet" href="cont.css">
+    </head>
+    <body>
+ 
+        <div class="bara_sus">
+            
+            <div class="dropdown">
+                <button class="meniu">Meniu</button>
+               <div class="content">
+                <a href="profil.html">Profil</a>
+                <a href="status.html">Status comanda</a>
+                <a href="istoric.html">Istoric comenzi</a>
+                <a href="deconectare.php">Deconectare</a> 
+               </div>
+               </div>
+
+                <div class="logo">Saveur Café</div>
+           
+        </div>
+
+    <div class="products">
+
+        <hr>
+        <div class="product">
+            <img src="https://restograf.ro/wp-content/uploads/2023/04/espresso.jpg"  data-product-id="1" name="espresso" data-price="10.00">
+            
+            <span class="t">Espresso</span>
+            <span>10.00 lei</span>
+        </div>
+        <div class="quantity-controls">
+        <span class="quantity" onclick="decreaseQuantity(this)" data-product="espresso">&#9666;</span>
+        <span class="quantity-value" name="espresso" >0</span>
+        <span class="quantity" onclick="increaseQuantity(this)" data-product="espresso">&#9656;</span>
+        </div>
+
+        <hr>
+        <div class="product">
+            <img src="https://restograf.ro/wp-content/uploads/2023/04/doppio.jpg"  data-product-id="2" name="doppio"data-price="10.50">
+            <span class="t">Doppio</span>
+            <span>10.50 lei</span>
+        </div>
+        <div class="quantity-controls">
+            <span class="quantity" onclick="decreaseQuantity(this)" data-product="doppio">&#9666;</span>
+        <span class="quantity-value"  name="doppio">0</span>
+        <span class="quantity" onclick="increaseQuantity(this)" data-product="doppio">&#9656;</span>
+        </div>
+
+        <hr>
+        <div class="product">
+            <img src="https://restograf.ro/wp-content/uploads/2023/04/ristretto.jpg"  data-product-id="3"name="ristretto" data-price="7.50">
+            <span class="t">Ristretto</span>
+            <span>7.50 lei</span>
+        </div>
+        <div class="quantity-controls">
+            <span class="quantity" onclick="decreaseQuantity(this)" data-product="ristretto">&#9666;</span>
+        <span class="quantity-value" name="ristretto" >0</span>
+        <span class="quantity" onclick="increaseQuantity(this)"data-product="ristretto"></span>&#9656;</span>
+        </div>
+
+        <hr>
+        <div class="product">
+            <img src="https://restograf.ro/wp-content/uploads/2023/04/americano-1.jpg"  data-product-id="4" name="americano" data-price="11.00">
+            <span class="t">Americano</span>
+            <span>11.00 lei</span>
+        </div>
+        <div class="quantity-controls">
+            <span class="quantity" onclick="decreaseQuantity(this)" data-product="americano">&#9666;</span>
+        <span class="quantity-value" name="americano">0</span>
+        <span class="quantity" onclick="increaseQuantity(this)"data-product="americano"></span>&#9656;</span>
+        </div>
+
+        <hr>
+        <div class="product">
+            <img src="https://restograf.ro/wp-content/uploads/2023/04/machiatto.jpg" data-product-id="5" name="macchiato"data-price="11.00">
+            <span class="t">Macchiato</span>
+            <span>11.00 lei</span>
+        </div>
+        <div class="quantity-controls">
+            <span class="quantity" onclick="decreaseQuantity(this)" data-product="macchiato">&#9666;</span>
+        <span class="quantity-value"  name="macchiato">0</span>
+        <span class="quantity" onclick="increaseQuantity(this)"data-product="macchiato">&#9656;</span>
+        </div>
+
+        <hr>
+        <div class="product">
+            <img src="https://restograf.ro/wp-content/uploads/2023/04/cortado-1.jpg"  data-product-id="6" name="cortado"data-price="11.50">
+            <span class="t">Cortado</span>
+            <span>11.50 lei</span>
+        </div>
+        <div class="quantity-controls">
+            <span class="quantity" onclick="decreaseQuantity(this)" data-product="cortado">&#9666;</span>
+        <span class="quantity-value" name="cortado">0</span>
+        <span class="quantity" onclick="increaseQuantity(this)"data-product="cortado">&#9656;</span>
+        </div>
+
+        <hr>
+        <div class="product">
+            <img src="https://restograf.ro/wp-content/uploads/2023/04/cappucino.jpg" data-product-id="7" name="cappuccino" data-price="15.00">
+            <span class="t">Cappuccino</span>
+            <span>15.00 lei</span>
+        </div>
+        <div class="quantity-controls">
+            <span class="quantity" onclick="decreaseQuantity(this)" data-product="cappuccino">&#9666;</span>
+        <span class="quantity-value"  name="cappuccino" >0</span>
+        <span class="quantity" onclick="increaseQuantity(this)"data-product="cappuccino">&#9656;</span>
+        </div>
+
+        <hr>
+        <div class="product">
+            <img src="https://restograf.ro/wp-content/uploads/2023/04/flat-white.jpg"  data-product-id="8" name="flatwhite" data-price="16.00">
+            <span class="t">Flat white</span>
+            <span>16.00 lei</span>
+        </div>
+        <div class="quantity-controls">
+            <span class="quantity" onclick="decreaseQuantity(this)" data-product="flatwhite">&#9666;</span>
+        <span class="quantity-value" name="flatwhite" >0</span>
+        <span class="quantity" onclick="increaseQuantity(this)"data-product="flatwhite">&#9656;</span>
+        </div>
+
+        <hr>
+        <div class="product">
+            <img src="https://restograf.ro/wp-content/uploads/2023/04/latte.jpg"  data-product-id="9"  name="latte"data-price="16.00">
+            <span class="t">Latte</span>
+            <span>16.00 lei</span>
+        </div>
+        <div class="quantity-controls">
+            <span class="quantity" onclick="decreaseQuantity(this)" data-product="latte">&#9666;</span>
+        <span class="quantity-value" name="latte">0</span>
+        <span class="quantity" onclick="increaseQuantity(this)"data-product="latte">&#9656;</span>
+        </div>
+
+        <hr>
+        <div class="product">
+            <img src="https://restograf.ro/wp-content/uploads/2023/04/mocha.jpg"  data-product-id="10" name="mocha" data-price="17.50">
+            <span class="t">Mocha</span>
+            <span>17.50 lei</span>
+        </div>
+        <div class="quantity-controls">
+            <span class="quantity" onclick="decreaseQuantity(this)" data-product="mocha">&#9666;</span>
+        <span class="quantity-value" name="mocha">0</span>
+        <span class="quantity" onclick="increaseQuantity(this)"data-product="mocha">&#9656;</span>
+        </div>
+
+        <hr>
+        <div class="product">
+            <img src="https://restograf.ro/wp-content/uploads/2023/04/affogato.jpg"  data-product-id="11" name="affogato" data-price="19.50">
+            <span class="t">Affogato</span>
+            <span>19.50 lei</span>
+        </div>
+        <div class="quantity-controls">
+            <span class="quantity" onclick="decreaseQuantity(this)" data-product="affogato">&#9666;</span>
+        <span class="quantity-value" name="affogato">0</span>
+        <span class="quantity" onclick="increaseQuantity(this)"data-product="affogato">&#9656;</span>
+        </div>
+
+        <hr>
+        <div class="product">
+            <img src="https://restograf.ro/wp-content/uploads/2023/04/irish-cream.jpg"  data-product-id="12" name="irish" data-price="22.50">
+            <span class="t">Irish coffee</span>
+            <span>22.50 lei</span>
+        </div>
+        <div class="quantity-controls">
+            <span class="quantity" onclick="decreaseQuantity(this)" data-product="irish">&#9666;</span>
+        <span class="quantity-value"  name="irish">0</span>
+        <span class="quantity" onclick="increaseQuantity(this)"data-product="irish">&#9656;</span>
+        </div>
+
+        <hr>
+        <div class="product">
+            <img src="https://restograf.ro/wp-content/uploads/2023/04/coretto.jpg"  data-product-id="13" name="coretto" data-price="25.50">
+            <span class="t">Coretto</span>
+            <span>25.50 lei</span>
+        </div>
+        <div class="quantity-controls">
+            <span class="quantity" onclick="decreaseQuantity(this)" data-product="coretto">&#9666;</span>
+        <span class="quantity-value" name="coretto">0</span>
+        <span class="quantity" onclick="increaseQuantity(this)"data-product="coretto">&#9656;</span>
+        </div>
+
+        <hr>
+        <div class="product">
+            <img src="https://restograf.ro/wp-content/uploads/2023/04/cold-brew.jpg"  data-product-id="14" name="coldbrew" data-price="15.00">
+            <span class="t">Cold Brew</span>
+            <span>15.00 lei</span>
+        </div>
+        <div class="quantity-controls">
+            <span class="quantity" onclick="decreaseQuantity(this)" data-product="coldbrew">&#9666;</span>
+        <span class="quantity-value" name="coldbrew" >0</span>
+        <span class="quantity" onclick="increaseQuantity(this)"data-product="coldbrew">&#9656;</span>
+        </div>
+
+        <hr>
+        <div class="product">
+            <img src="https://restograf.ro/wp-content/uploads/2023/04/frappe.jpg"  data-product-id="15" name="frappe" data-price="21.00">
+            <span class="t">Frappe</span>
+            <span>21.00 lei</span>
+        </div>
+        
+        <div class="quantity-controls">
+            <span class="quantity" onclick="decreaseQuantity(this)" data-product="frappe">&#9666;</span>
+        <span class="quantity-value"  name="frappe">0</span>
+        <span class="quantity" onclick="increaseQuantity(this)"data-product="frappe">&#9656;</span>
+        </div>
+        <hr>
+        
+        <div class="total">
+            Total: <span id="total-amount">0</span> lei
+        </div>
+     </div>
+
+     <div class="ora_">
+     Alege ora la care vrei sa ridici<br> comanda din magazin:<br><br>
+     </div>
+     <select id="ore"  > </select>
+     
+
+       <input class="comanda" onclick="add_comand()" type="button" value="Pune comanda">
+        <script src="cont.js"></script>
+    </body>
+    <footer class="footer"><br><br><br><br>
+        All rights reserved by Saveur Café &copy;-2024<br><br>
+        Author: Claudia<br><br>
+        Phone:0201234567<br><br><br><br>
+    </footer>
+</html>

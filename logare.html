@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saveur Café - Logare</title>
+    <link rel="stylesheet" href="logare.css">
+    <style>
+        .error {
+            border: 2px solid red;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="formular">
+        <h1 class="titlu1">Logare</h1>
+        <div class="tabel_form">
+            <form id="loginForm" method="POST">
+                <table class="tabel1">
+                    <tr>
+                        <th class="text">Nume: </th>
+                        <th></th>
+                        <th>
+                            <input id="nume" class="nume_log" name="nume" type="text" placeholder="Introduceti numele" required><br><br>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class="text">Parola:</th>
+                        <th></th>
+                        <th>
+                            <input id="parola" class="parola_log" name="parola" type="password" placeholder="Introduceti parola" required><br><br>
+                        </th>
+                    </tr>
+                  <tr>
+                        <th colspan="3">
+                            <span id="errorMessage" style="color:red;"></span>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>
+                            <input class="buton_log" onclick="autentificare()" type="button" value="Autentificare">
+                        </th>
+                        <th>
+                            <input class="buton_log" onclick="creare_cont()" type="button" value="Creare cont">
+                        </th>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <script>
+        function creare_cont() {
+            window.location.href = "creare_cont.html";
+        }
+
+        function autentificare() {
+            const form = document.getElementById('loginForm');
+            const formData = new FormData(form);
+            const xhr = new XMLHttpRequest();
+
+            document.getElementById('errorMessage').textContent = '';
+            const numeInput = document.getElementById('nume');
+            const parolaInput = document.getElementById('parola');
+            numeInput.classList.remove('error');
+            parolaInput.classList.remove('error');
+            numeInput.placeholder = "Introduceti numele";
+            parolaInput.placeholder = "Introduceti parola";
+
+            xhr.open('POST', 'autentificare.php', true);
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded'); 
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                    const response = JSON.parse(xhr.responseText);
+                    
+                    if (response.success) {
+                        localStorage.setItem('sesiune', response.id_utilizator);
+                        window.location.href = 'cont.html';
+                    } else {
+                        document.getElementById('errorMessage').textContent = response.message;
+                        
+                        numeInput.classList.add('error');
+                        parolaInput.classList.add('error');
+                        numeInput.placeholder = "Introduceți datele corecte";
+                        parolaInput.placeholder = "Introduceți datele corecte";
+                    }
+                }
+            };
+            xhr.send(new URLSearchParams(formData));
+            const params = new URLSearchParams();
+            formData.forEach((value, key) => {
+                params.append(key, value);
+            });
+
+            xhr.send(params.toString());
+        }
+
+    </script>
+</body>
+</html>

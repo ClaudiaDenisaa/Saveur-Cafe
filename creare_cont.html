@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saveur Café</title>
+    <link rel="stylesheet" href="logare.css">
+    <style>
+        .error {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+
+<div class="formular">
+    <h1 class="titlu1">Logare</h1>
+    <div class="tabel_form">
+        <form id="signupForm" method="POST" action="sigup.inc.php" onsubmit="return validateForm()">
+            <table>
+                <tr>
+                    <td>Nume:</td>
+                    <td><input id="nume" name="nume" type="text" placeholder="Username"></td>
+                </tr>
+                <tr>
+                    <td>Parolă:</td>
+                    <td><input id="parola" name="parola" type="password" placeholder="Crează parola"></td>
+                </tr>
+                <tr>
+                    <td>Telefon:</td>
+                    <td><input id="telefon" name="telefon" type="text" placeholder="ex: 0712345678"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input id="email" name="email" type="text" placeholder="Email"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input class="buton_log" type="submit" value="Creare cont"></td>
+                </tr>
+            </table>
+            <p id="errorMessage" style="color: red; font-weight: bold;"></p>
+        </form>
+    </div>
+</div>
+
+<script>
+    function validateForm() {
+        var nume = document.getElementById('nume').value;
+        var parola = document.getElementById('parola').value;
+        var telefon = document.getElementById('telefon').value;
+        var email = document.getElementById('email').value;
+
+        var errorFound = false; 
+        var errorMessage = ''; 
+
+        var numeRegex = /^[a-zA-Z]+$/;
+        if (!numeRegex.test(nume)) {
+            document.getElementById('nume').classList.add('error');
+            errorFound = true; 
+        } else {
+            document.getElementById('nume').classList.remove('error');
+        }
+
+       
+        if (parola === '') {
+            document.getElementById('parola').classList.add('error');
+            errorFound = true; 
+        } else {
+            document.getElementById('parola').classList.remove('error');
+        }
+
+
+        var telefonRegex = /^[0-9]{10}$/;
+        if (!telefonRegex.test(telefon)) {
+            document.getElementById('telefon').classList.add('error');
+            errorFound = true; 
+        } else {
+            document.getElementById('telefon').classList.remove('error');
+        }
+
+        
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            document.getElementById('email').classList.add('error');
+            errorFound = true; 
+        } else {
+            document.getElementById('email').classList.remove('error');
+        }
+
+        if (errorFound) {
+            errorMessage = 'Completează toate câmpurile corect!';
+            document.getElementById('errorMessage').textContent = errorMessage;
+            return false; //se opreste trimiterea formularului
+        }
+
+        return true; // se trimite formularul deoarece toate câmpurile sunt completate și corecte
+    }
+</script>
+
+</body>
+</html>

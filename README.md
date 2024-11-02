@@ -2,6 +2,11 @@
 Elemente de web design (HTMAL, CSS, JavaScript, PHP)  (phpMyAdmin-baza e date)
 
 
+
+
+
+
+
 ## *Descriere*
 <br>
 Numele site -lui este Saveur Café. Este un site al unei cafenele care are
@@ -9,6 +14,11 @@ locație fizică. Orice client poate să-și facă cont și să se logheze pentr
 comandă o cafea sau mai multe,selectând ora la care să fie gata.Acesta
 urmează să preia comanda din locatia fizică la ora pe care a selectat-o fără să
 mai aștepte.
+
+
+
+
+
 
 
 ## *Manual site*
@@ -21,6 +31,11 @@ Web Server.
 Site ul se află în documentul htdocs din XAMPP. Pentru a accesa site ul e
 nevoie să deschideți o fereastră localhost ,acolo aveți posibilitatea de a
 accesa PROIECT EWD, iar apoi apăsăți fișierul logare.html.
+
+
+
+
+
 
 
 ## *Baza de date*
@@ -80,6 +95,13 @@ Am folosit o baza de date numită ewd_savoir_cafe(http://localhost/phpmyadmin/in
 • pret
 
 
+
+
+
+
+
+
+
 ## *Funcționalitate*
 
 
@@ -97,7 +119,8 @@ săgeta din dreapta .În momentul acela se va incrementa cantitatea cu 1 și
 prețul produsului se va adăuga la valoarea Total care reprezintă suma totală a
 tuturor produselor.Pentru a scoate un produs se va apasă pe săgeata din
 stânga cantității.
-<br>
+
+
 La final,clientul va selecta ora la care dorește să ridice produsele din
 magazinul fizic.Apoi va apasa butonul Pune comandă.Când acesta apasă
 butonul, în spate se vor adăuga în baza de date, datele comenziii, în tabelul
@@ -105,7 +128,8 @@ Comandă, respective în tabelul Detalii (aici se vor adăuga fiecare produs și
 cantitatea acestuia,având id ul comenzii (o comandă conține mai multe
 produse).Pe ecran clientul va putea vizualiza întreaga comandă și detalile
 aferente acesteia.
-<br>
+
+
 Putem, de asemena, să vizualizam istoricul tuturor comenzilor apăsând
 Istoric comenzi din meniu(din colțul stânga de sus a paginii).Profilul clientului
 cu date precum număr de telefon,email și numărul comenzilor efectuate de

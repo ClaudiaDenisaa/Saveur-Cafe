@@ -88,7 +88,8 @@ Un client se poate conecta cu nume și parolă,dacă nu are cont trebuie să-
 parolă,să introducă numărul de telefon și emailul.Toate aceste date se vor
 adaugă în baza de date în tabelul Utilizator.Pe urmă este redirecționat să se
 logheze cu numele și parola.
-<br>
+
+
 În momentul în care acesta se logheza vom reține în localStorge id ul
 utilizatorului pentru a fi folosit ulterior.După logare apare pagina
 Cumpărături.Aici clientul poate selecta produse fie apăsând imaginea, fie

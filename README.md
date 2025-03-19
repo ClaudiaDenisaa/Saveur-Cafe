@@ -1,5 +1,5 @@
 # Saveur-Cafe
-Elemente de web design (HTMAL, CSS, JavaScript, PHP)  (phpMyAdmin-baza e date)
+Elemente de web design (HTML, CSS, JavaScript, PHP)  (phpMyAdmin-baza e date)
 
 
 
